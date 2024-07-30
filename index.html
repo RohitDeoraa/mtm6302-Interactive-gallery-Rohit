@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Gallery</h1>
+  </header>
+
+  <main>
+    <section class="gallery">
+      <article class="gallery-item" data-title="Nature Landscape" data-description="A beautiful view of nature with mountains and a river." data-fullsize="images/fullsize1.jpg">
+        <img src="images/thumbnail1.jpg.jpg" alt="Nature Landscape">
+        <h2>Nature Landscape</h2>
+      </article>
+      <article class="gallery-item" data-title="City Skyline" data-description="A bustling city skyline at night with skyscrapers." data-fullsize="images/fullsize2.jpg">
+        <img src="images/thumbnail2.jpg.jpg" alt="City Skyline">
+        <h2>City Skyline</h2>
+      </article>
+      <article class="gallery-item" data-title="Forest Path" data-description="A serene forest path surrounded by tall trees." data-fullsize="images/fullsize3.jpg">
+        <img src="images/thumbnail3.jpg.jpg" alt="Forest Path">
+        <h2>Forest Path</h2>
+      </article>
+      <article class="gallery-item" data-title="Desert Sunset" data-description="A stunning sunset over a desert landscape." data-fullsize="images/fullsize4.jpg">
+        <img src="images/thumbnail4.jpg.jpg" alt="Desert Sunset">
+        <h2>Desert Sunset</h2>
+      </article>
+    </section>
+
+    <div class="modal" id="modal">
+      <span class="close" id="close">&times;</span>
+      <img class="modal-content" id="modal-img" alt="">
+      <div id="caption"></div>
+    </div>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
